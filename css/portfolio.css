@@ -1,0 +1,99 @@
+/* Header */ 
+
+.page-header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ECECEC;
+}
+
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Section */
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Button */ 
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  outline: none;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.portfolio-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}  
+
+.portfolio-btns .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button:hover, 
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* .button.primary.current {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+} */
+
+/* Cards */ 
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * var(--feature-gap));
+  margin-top: calc(-1 * var(--feature-gap));
+}
+
+.portfolio-list .item {
+  flex-basis: calc(100% / 3 - var(--feature-gap));
+  margin-left: var(--feature-gap);
+  margin-top: var(--feature-gap);
+  border: 1px solid #EEEEEE;
+}
+
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-list .image {
+  width: 100%;
+}
+
+.portfolio-list .content {
+  padding: 20px 24px;
+}
+
+.portfolio-list .title {
+  margin-bottom: 4px;
+  color: var(--title-text-color); 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em; 
+}
+
+.portfolio-list .text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
