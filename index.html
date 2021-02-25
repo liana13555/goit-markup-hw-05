@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="./css/styles.css">    
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 <body>
     <!-- Шапка сайта -->
@@ -46,7 +47,7 @@
         <section class="hero">
           <div class="container">
            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-           <a href="" class="button order">Заказать услугу</a>
+           <button class="button order" data-modal-open>Заказать услугу</button>
           </div>
         </section>    
     <!-- Преимущества -->
@@ -334,6 +335,17 @@
           </ul>
         </div>
       </div>
-    </footer>   
+    </footer>  
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close>
+          <svg class="icon" width="11px" height="11px">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      
+    </div> 
+    <script src="./js/modal.js"></script>
 </body>
 </html>
