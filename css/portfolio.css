@@ -12,6 +12,10 @@
   color: var(--accent-color);
 }
 
+.site-nav .link.current::after {
+  transform: scaleX(1);
+}
+
 /* Section */
 
 .section-portfolio {

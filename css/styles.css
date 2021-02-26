@@ -3,6 +3,10 @@
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.site-nav .link.current::after {
+  transform: scaleX(1);
+}
   
 /* Hero */
 

@@ -19,6 +19,7 @@
   --additional-bg-color: #F5F4FA;
   --icon-color: #AFB1B8;
   --feature-gap: 30px;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 body{
@@ -107,13 +108,31 @@ p {
   padding-bottom: 32px;
 }
 
-.site-nav a {
+.site-nav .link {
+  position: relative;
   color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {     
   color: var(--accent-color);
+}
+
+.site-nav .link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+ 
+  transform: scaleX(0);
+  transition: transform 250ms var(--timing-function);
+}
+
+.site-nav .link:hover::after {
+  transform: scaleX(1);
 }
 
 /* Contact nav */
@@ -127,7 +146,7 @@ p {
   margin-left: 50px;
 }
 
-.contact-nav a {
+.contact-nav .link {
   color: var(--primary-text-color);
 }
 
