@@ -33,6 +33,8 @@
   outline: none;
   border-radius: 4px;
   border: transparent;
+
+  transition: background-color 250ms, color 250ms var(--timing-function);
 }
 
 .portfolio-btns {
@@ -51,10 +53,6 @@
   color: var(--white-color);
 }
 
-/* .button.primary.current {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-} */
 
 /* Cards */ 
 
@@ -71,6 +69,8 @@
   margin-left: var(--feature-gap);
   margin-top: var(--feature-gap);
   border: 1px solid #EEEEEE;
+
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-list .item:hover,

@@ -111,6 +111,8 @@ p {
 .site-nav .link {
   position: relative;
   color: var(--title-text-color);
+
+  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -148,6 +150,8 @@ p {
 
 .contact-nav .link {
   color: var(--primary-text-color);
+
+  transition: color 250ms var(--timing-function);
 }
 
 .contact-nav .link:hover,
@@ -284,6 +288,8 @@ footer {
   width: inherit;
   height: inherit; 
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
 } 
 
 .join .icon {
