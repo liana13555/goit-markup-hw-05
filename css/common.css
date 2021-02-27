@@ -205,36 +205,35 @@ p {
 
 /* Footer */
 
-footer {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
-.footer {
+.box {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 .address .text {
   margin-top: 20px;
   margin-bottom: 9px;
-  color: var(--white-color);
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  color: var(--white-color);
 }
 
 .address .link {
-  color: var(--secondary-black-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  color: var(--secondary-black-color);
 }
 
 .address .link:not(:last-child) {
@@ -242,15 +241,14 @@ footer {
 }
 
 .logo-footer {
-  color: var(--white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: var(--white-color);
 }
 
 .social {
-  padding-top: 12px;
   margin-left: 70px;
 }
 
